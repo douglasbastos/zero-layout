@@ -2,3 +2,11 @@
 
 Criando header responsivo
 http://tableless.com.br/header-responsivo-somente-com-css/
+
+
+
+
+
+# Notas
+
+Pequisar sobre elemento css -> z-index
