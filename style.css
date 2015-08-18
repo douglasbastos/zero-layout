@@ -87,7 +87,7 @@ input#control-nav{
         background: #333;
         margin: 0 2px;
     }
-    header .controle-nav-close{
+    header .control-nav-close{
         position: fixed;
         top: 0;
         right: 0;
@@ -143,14 +143,10 @@ input#control-nav{
     header li a:hover {
         background-color: #ccc;
     }
-    #control-nav:checked ~ .control-nav-close{
-        -webkit-transform: translate(0, 0);
-        -ms-transform: translate(0, 0);
-        transform: translate(0, 0);
-    }
-    #control-nav:checked ~ nav{
-        -webkit-transform: translate(0, 0);
-        -ms-transform: translate(0, 0);
-        transform: translate(0, 0);
+    input#control-nav:checked ~ nav,
+    input#control-nav:checked ~ label.control-nav-close {
+      -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      transform: translate(0, 0);
     }
 }
