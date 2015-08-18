@@ -12,13 +12,11 @@ header{
     z-index: 2;
 }
 header h1{
-    padding: 10px 0 0 10px    
+    float: left;
+    padding: 10px 0 0 10px;
 }
 header h1 a{
     color: #333;
-}
-header ul{
-    padding: 15px 10px 0 0;
 }
 header li{
     border-left: 1px solid #ccc;
@@ -40,9 +38,18 @@ header li a:hover,
 header li a.active{
     color: #333;
 }
+nav.toggle{
+    float: right;
+    padding: 15px 0;
+}
 input#control-nav{
     visibility: hidden;
     position: absolute;
     left -9999px;
     opacity: 0;
+}
+.list-menu li{
+    float: left;
+    display: block;
+    position: relative;
 }
