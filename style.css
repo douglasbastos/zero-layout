@@ -81,10 +81,11 @@ input#control-nav{
         cursor: pointer;
     }
     header .control-nav:before{
-        content: ""
+        content: "";
         display: block;
         height: 3px;
         background: #333;
+        margin: 0 2px;
     }
     header .controle-nav-close{
         position: fixed;
@@ -116,5 +117,40 @@ input#control-nav{
         -webkit-transform: translate(100%, 0);
         -ms-transform: translate(100%, 0);
         transform: translate(100%, 0);
+    }
+    header nav.toggle{
+        padding: 0px;
+    }
+    header ul.list-auto {
+        padding: 0;
+    }
+    header ul.list-auto li {
+        width: 100%;
+        border: solid #ccc;
+        border-width: 0 0 1px;
+    }
+    header li{
+        width: 100%;
+        border-left: 0;
+        border-bottom: 1px solid #ccc;
+    }
+    header li:first-child{
+        border-bottom: 1px solid #ccc;
+    }
+    header li a {
+        padding: 6px 10px;
+    }
+    header li a:hover {
+        background-color: #ccc;
+    }
+    #control-nav:checked ~ .control-nav-close{
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    #control-nav:checked ~ nav{
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
     }
 }
