@@ -2,7 +2,6 @@
 .column{
   box-sizing: border-box;
 }
-
 .row::before,
 .row:after{
   content: " ";
@@ -51,6 +50,9 @@
 .column-12 {
   width: 100%;
 }
+.content{
+  padding-top: 60px;
+}
 @media only screen and (max-width: 550px) {
   .column-1,
   .column-2,
@@ -70,4 +72,13 @@
   .column + .column {
     margin-left: 0;
   }
+}
+.column {
+    background: #ea2;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #edf;
+    padding: 5px;
+    min-height: 30px;
+    text-align: center;
 }
