@@ -1,0 +1,10 @@
+.row,
+.column{
+  box-sizing: border-box;
+}
+
+.row::before,
+.row:after{
+  content: " ";
+  clear: both;
+}
